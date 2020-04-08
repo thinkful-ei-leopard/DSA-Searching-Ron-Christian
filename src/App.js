@@ -12,6 +12,7 @@ class App extends Component {
   }
 
   updateSearch = (event) => {
+    console.log(event.target.value);
     this.setState({
         search: event.target.value
     })
@@ -20,12 +21,12 @@ class App extends Component {
   render() {
     return (
         <div className="App">
-          <header className="App-header">
+          <main className="App-container">
            <InputBox handleSearch={this.updateSearch}/>
            <LinearSearch searchInput={this.state.search}/>
            <BinarySearch searchInput={this.state.search}/>
            <Dataset />
-          </header>
+          </main>
         </div>
       );
   }

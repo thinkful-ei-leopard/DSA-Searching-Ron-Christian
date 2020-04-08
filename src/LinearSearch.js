@@ -13,11 +13,11 @@ function doLinearSearch(array, value) {
 
 export default function LinearSearch(props) {
 
-    const result = doLinearSearch(unsortedArr, 32);
+    const result = doLinearSearch(unsortedArr, props.searchInput);
 
     return(
         <div><h2>Linear Search</h2>
-            <p>Number of times search ran: {result}</p>
+            <p>Number of times search ran: {result === -1 ? 'Value not found' : result + 1}</p>
         </div>
     );
 }

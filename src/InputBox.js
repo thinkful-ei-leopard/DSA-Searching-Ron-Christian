@@ -14,7 +14,7 @@ export default class InputBox extends Component {
     render() {
         return (
             <div> 
-                <input onChange = {this.handleSearch} 
+                <input onChange = {e => this.props.handleSearch(e)} 
                 type='text' 
                 placeholder='Input number to search'
                 id='number'
