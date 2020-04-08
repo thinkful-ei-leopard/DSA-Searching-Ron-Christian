@@ -1,5 +1,0 @@
-//Linear Search
-
-
-
-//Binary Search
