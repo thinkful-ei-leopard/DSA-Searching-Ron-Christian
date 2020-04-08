@@ -53,3 +53,29 @@ console.log(deweySearch([1,2,3,4,5,6,7,8,9,10], 9));
 // Answer: You would do a binary search to find the specific aisle or sub-aisle, 
 // then you would have to do a linear search of that section for the book (because libraries
 // and bookstores get messy and arent very organized)
+
+
+
+                                                ROOT: 35
+let inOrder =  '14 15 19 25 27 35 79 89 90 91';  left parent right
+
+let preOrder = '35 25 15 14 19 27 89 79 91 90';  parent left right
+
+let postOrder = '14 19 15 27 25 79 90 91 89 35';  left right parent
+
+              35                
+             /  \
+            25    89
+           /  \   / \
+          15  27 79  91
+         / \         /
+        14 19       90
+
+postOrder = '5 7 6 9 11 10 8' left right parent
+preOrder = '8 6 5 7 10 9 11'  parent left right
+
+          8
+        /   \
+       6    10
+      / \   / \
+     5   7 9   11
